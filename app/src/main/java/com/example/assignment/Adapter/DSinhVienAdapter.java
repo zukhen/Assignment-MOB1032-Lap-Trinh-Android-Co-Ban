@@ -162,6 +162,7 @@ public class DSinhVienAdapter extends BaseAdapter {
             datePickerDialog.show();
         });
         btn_editSV.setOnClickListener(view -> {
+            tvError.setText("");
             if (ed_suaMaSV.getText().toString().isEmpty() || ed_suaHoVaTen.getText().toString().isEmpty() || ed_suaNgaySinh.getText().toString().isEmpty()) {
                 tvError.setText(R.string.errror);
                 new Handler().postDelayed(new Runnable() {

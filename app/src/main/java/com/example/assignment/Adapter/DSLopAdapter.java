@@ -111,6 +111,7 @@ public class DSLopAdapter extends BaseAdapter {
         //      bắt sự kiện
 
         btn_editLop.setOnClickListener(view -> {
+            tvError.setText("");
             if (ed_suaMaLop.getText().toString().isEmpty() || ed_suaTenLop.getText().toString().isEmpty()) {
                 tvError.setText(R.string.errror);
                 new Handler().postDelayed(new Runnable() {

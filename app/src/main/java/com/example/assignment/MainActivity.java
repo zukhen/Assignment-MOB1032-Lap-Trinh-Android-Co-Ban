@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        tvError.setText("");
 //        bắt sự kiện
         btn_createLop.setOnClickListener(view -> {
             if (ed_maLop.getText().toString().isEmpty() || ed_tenLop.getText().toString().isEmpty()) {
@@ -159,6 +160,8 @@ public class MainActivity extends AppCompatActivity {
         btn_createSV = viewDialog.findViewById(R.id.btn_createSV);
         tvError = viewDialog.findViewById(R.id.tvError);
 //      set view
+        tvError.setText("");
+
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
