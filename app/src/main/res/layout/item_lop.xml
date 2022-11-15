@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_item_lop"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingVertical="2dp">
+
+        <ImageView
+            android:id="@+id/avatarItemLS"
+            android:layout_width="84dp"
+            android:layout_height="80dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_launcher_foreground" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_maLop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="khanh"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_tenLop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="khanh"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgEdit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_mode_edit_24" />
+
+        <ImageView
+            android:id="@+id/imgDel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_baseline_delete_outline_24" />
+    </LinearLayout>
+</LinearLayout>

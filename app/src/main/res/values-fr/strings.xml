@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gestion des étudiants</string>
+    <string name="language">Langue</string>
+    <string name="th_m_l_p">Ajouter une classe</string>
+    <string name="hello_admin">Bienvenue</string>
+    <string name="qu_n_l_sinh_vi_n">Gestion des étudiants</string>
+    <string name="th_m_sinh_vi_n">Ajouter des élèves</string>
+    <string name="xem_danh_s_ch_l_p">Afficher la liste des classes</string>
+    <string name="xem_danh_s_ch_sinh_vi_n">Afficher la liste des étudiants</string>
+    <string name="s_a_l_p">Modifier la classe</string>
+    <string name="m_l_p">Code de classe</string>
+    <string name="t_n_l_p">Nom de classe</string>
+    <string name="s_a">Modifier</string>
+    <string name="hu">Annuler</string>
+    <string name="list_s_ch_sinh_vi_n">Liste des étudiants</string>
+    <string name="list_s_ch_l_p">Liste de classe</string>
+    <string name="s_a_sinh_vi_n">Modifier l\'élève</string>
+    <string name="h_v_t_n">Nom et prénom</string>
+    <string name="ng_y_sinh">Date de naissance</string>
+    <string name="th_m">ajouter</string>
+</resources>

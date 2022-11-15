@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">छात्र प्रबंधन</string>
+    <string name="language">भाषा</string>
+    <string name="th_m_l_p">कक्षा जोड़ें</string>
+    <string name="hello_admin">स्वागत है</string>
+    <string name="qu_n_l_sinh_vi_n">छात्र प्रबंधन</string>
+    <string name="th_m_sinh_vi_n">छात्रों को जोड़ें</string>
+    <string name="xem_danh_s_ch_l_p">कक्षा सूची दिखाएं</string>
+    <string name="xem_danh_s_ch_sinh_vi_n">छात्रों की सूची दिखाएं</string>
+    <string name="s_a_l_p">Modifier la classe</string>
+
+    <string name="m_l_p">क्लास कोड</string>
+    <string name="t_n_l_p">कक्षा का नाम</string>
+    <string name="s_a">संपादित करें</string>
+    <string name="hu">रद्द करें</string>
+    <string name="list_s_ch_sinh_vi_n">छात्रों की सूची</string>
+    <string name="list_s_ch_l_p">वर्ग की सूची</string>
+    <string name="s_a_sinh_vi_n">छात्र संपादित करें</string>
+    <string name="h_v_t_n">पहला और आखरी नाम</string>
+    <string name="ng_y_sinh">जन्म की तारीख</string>
+    <string name="th_m">जोड़ें</string>
+</resources>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Quan Ly Sinh Vien</string>
+
+    <string name="th_m_l_p">Thêm lớp</string>
+    <string name="hello_admin">Xin chào</string>
+    <string name="qu_n_l_sinh_vi_n">Quản lý sinh viên</string>
+    <string name="th_m_sinh_vi_n">Thêm sinh viên</string>
+    <string name="xem_danh_s_ch_l_p">Xem danh sách lớp</string>
+    <string name="xem_danh_s_ch_sinh_vi_n">Xem danh sách sinh viên</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="s_a_l_p">Sửa lớp</string>
+    <string name="m_l_p">Mã lớp</string>
+    <string name="t_n_l_p">Tên lớp</string>
+    <string name="s_a">Sửa</string>
+    <string name="hu">Huỷ</string>
+    <string name="list_s_ch_sinh_vi_n">Danh sách sinh viên</string>
+    <string name="list_s_ch_l_p">Danh sách lớp</string>
+    <string name="s_a_sinh_vi_n">Sửa sinh viên</string>
+    <string name="h_v_t_n">Họ và tên</string>
+    <string name="ng_y_sinh">Ngày sinh</string>
+    <string name="th_m">Thêm</string>
+
+</resources>

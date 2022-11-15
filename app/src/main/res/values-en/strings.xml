@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Student Management</string>
+    <string name="language">Language</string>
+    <string name="th_m_l_p">Add Class</string>
+    <string name="hello_admin">Welcome</string>
+    <string name="qu_n_l_sinh_vi_n">Student Management</string>
+    <string name="th_m_sinh_vi_n">Add students</string>
+    <string name="xem_danh_s_ch_l_p">Show class list</string>
+    <string name="xem_danh_s_ch_sinh_vi_n">Show list of students</string>
+    <string name="s_a_l_p">Edit class</string>
+    <string name="m_l_p">Class Code</string>
+    <string name="t_n_l_p">Class name</string>
+    <string name="s_a">Edit</string>
+    <string name="hu">Cancel</string>
+    <string name="list_s_ch_sinh_vi_n">List of students</string>
+    <string name="list_s_ch_l_p">List of class</string>
+    <string name="s_a_sinh_vi_n">Edit class</string>
+    <string name="h_v_t_n">Full name</string>
+    <string name="ng_y_sinh">Birthday</string>
+    <string name="th_m">Add</string>
+
+</resources>
