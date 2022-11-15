@@ -114,9 +114,9 @@ public class DSinhVienAdapter extends BaseAdapter {
         tv_hoVaTen = viewDialog.findViewById(R.id.tv_hoVaTen);
         tv_ngaySinh = viewDialog.findViewById(R.id.tv_ngaySinh);
 //        setThongTin
-        tv_maSinhVien.setText("Mã SV: " + listSinhVien.get(vitri).getMaSV());
-        tv_hoVaTen.setText("Họ và tên: " + listSinhVien.get(vitri).getHoVaTen());
-        tv_ngaySinh.setText("Ngày sinh: " + simpleDateFormat.format(listSinhVien.get(vitri).getNgaySinh()));
+        tv_maSinhVien.setText(R.string.m_l_p + listSinhVien.get(vitri).getMaSV());
+        tv_hoVaTen.setText(R.string.h_v_t_n + listSinhVien.get(vitri).getHoVaTen());
+        tv_ngaySinh.setText(R.string.ng_y_sinh+ simpleDateFormat.format(listSinhVien.get(vitri).getNgaySinh()));
         //        set view
         builder.setView(viewDialog);
         AlertDialog dialog = builder.create();

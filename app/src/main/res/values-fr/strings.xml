@@ -20,4 +20,8 @@
     <string name="ng_y_sinh">Date de naissance</string>
     <string name="th_m">ajouter</string>
     <string name="errror">Veuillez ne pas vider le champ de texte</string>
+    <string name="addSuccess">Ajout réussi</string>
+    <string name="addFailed">Échec de l\'ajout</string>
+    <string name="editSuccess">Modification réussie</string>
+    <string name="editFailed">Corrigez l\'erreur</string>
 </resources>
