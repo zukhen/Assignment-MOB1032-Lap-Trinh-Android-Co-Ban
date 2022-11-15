@@ -19,4 +19,5 @@
     <string name="h_v_t_n">Nom et prénom</string>
     <string name="ng_y_sinh">Date de naissance</string>
     <string name="th_m">ajouter</string>
+    <string name="errror">Veuillez ne pas vider le champ de texte</string>
 </resources>

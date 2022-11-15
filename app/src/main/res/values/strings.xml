@@ -19,5 +19,10 @@
     <string name="h_v_t_n">Họ và tên</string>
     <string name="ng_y_sinh">Ngày sinh</string>
     <string name="th_m">Thêm</string>
+    <string name="errror">Vui lòng không để trống</string>
+    <string name="addSuccess">Thêm thành công</string>
+    <string name="addFailed">Thêm thất bại</string>
+    <string name="editSuccess">Sửa thành công</string>
+    <string name="editFailed">Sửa thất bại</string>
 
 </resources>

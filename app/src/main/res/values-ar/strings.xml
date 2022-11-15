@@ -19,5 +19,9 @@
     <string name="h_v_t_n">الاسم الأول والاسم الأخير</string>
     <string name="ng_y_sinh">تاريخ الولادة</string>
     <string name="th_m">يضيف</string>
-
+    <string name="errror">الرجاء عدم إفراغ حقل النص</string>
+    <string name="addSuccess">تمت الإضافة بنجاح</string>
+    <string name="addFailed">إضافة فشل</string>
+    <string name="editSuccess">تم التحديث بنجاح</string>
+    <string name="editFailed">فشل التحديث</string>
 </resources>

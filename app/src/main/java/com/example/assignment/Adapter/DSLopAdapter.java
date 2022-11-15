@@ -3,6 +3,8 @@ package com.example.assignment.Adapter;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
@@ -23,6 +25,7 @@ import com.example.assignment.Model.Lop;
 import com.example.assignment.R;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class DSLopAdapter extends BaseAdapter {
     private ArrayList<Lop> listLop;
@@ -36,7 +39,6 @@ public class DSLopAdapter extends BaseAdapter {
         this.context = context;
         this.daoLop = daoLop;
     }
-
     @Override
     public int getCount() {
         return listLop.size();
@@ -110,7 +112,7 @@ public class DSLopAdapter extends BaseAdapter {
 
         btn_editLop.setOnClickListener(view -> {
             if (ed_suaMaLop.getText().toString().isEmpty() || ed_suaTenLop.getText().toString().isEmpty()) {
-                tvError.setText("Vui lòng không để trống");
+                tvError.setText(R.string.errror);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -122,10 +124,10 @@ public class DSLopAdapter extends BaseAdapter {
                 lop.setMaLop(ed_suaMaLop.getText().toString());
                 lop.setTenLop(ed_suaTenLop.getText().toString());
                 if (daoLop.updateLop(lop,maLoai)) {
-                    Toast.makeText(context, "Sửa thành công", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.editSuccess, Toast.LENGTH_LONG).show();
                     dialog.dismiss();
                 } else {
-                    Toast.makeText(context, "Sửa thất bại", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.editFailed, Toast.LENGTH_LONG).show();
                 }
                 loadDanhSach();
             }
@@ -145,4 +147,6 @@ public class DSLopAdapter extends BaseAdapter {
         TextView tv_tenLop, tv_maLop;
         ImageView imgDel, imgEdit;
     }
+
+
 }

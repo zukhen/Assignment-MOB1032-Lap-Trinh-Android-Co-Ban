@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
 //        bắt sự kiện
         btn_createLop.setOnClickListener(view -> {
             if (ed_maLop.getText().toString().isEmpty() || ed_tenLop.getText().toString().isEmpty()) {
-                tvError.setText("Vui lòng không để trống");
+                tvError.setText(R.string.errror);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -120,10 +120,10 @@ public class MainActivity extends AppCompatActivity {
                 lop.setMaLop(ed_maLop.getText().toString().toUpperCase());
                 lop.setTenLop(ed_tenLop.getText().toString());
                 if (daoLop.insertLop(lop)) {
-                    Toast.makeText(context, "Thêm thành công", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.addSuccess, Toast.LENGTH_LONG).show();
                     dialog.dismiss();
                 } else {
-                    Toast.makeText(context, "Thêm thất bại", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.addFailed, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -135,8 +135,8 @@ public class MainActivity extends AppCompatActivity {
         });
 //        show
         dialog.show();
-        daoLop.getNumberLop();
     }
+
 
     //    add Sinh Viên
     @SuppressLint("SetTextI18n")
@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
         });
         btn_createSV.setOnClickListener(view -> {
             if (ed_maSV.getText().toString().isEmpty() || ed_hoVaTen.getText().toString().isEmpty() || ed_ngaySinh.getText().toString().isEmpty()) {
-                tvError.setText("Vui lòng không để trống");
+                tvError.setText(R.string.errror);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -193,10 +193,10 @@ public class MainActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (daoSinhVien.insertSinhVien(sv)) {
-                    Toast.makeText(context, "Thêm thành công", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.addSuccess, Toast.LENGTH_LONG).show();
                     dialog.dismiss();
                 } else {
-                    Toast.makeText(context, "Thêm thất bại", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.addFailed, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -208,10 +208,7 @@ public class MainActivity extends AppCompatActivity {
         });
 //        show
         dialog.show();
-        daoSinhVien.getNumberSinhVien();
     }
-
-
     // thay doi ngon ngu
     private void changeLanguage(String language) {
         Locale locale = new Locale(language);

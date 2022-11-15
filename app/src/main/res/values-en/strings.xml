@@ -19,5 +19,9 @@
     <string name="h_v_t_n">Full name</string>
     <string name="ng_y_sinh">Birthday</string>
     <string name="th_m">Add</string>
-
+    <string name="errror">Please do not empty text field</string>
+    <string name="addSuccess">Add Successful</string>
+    <string name="addFailed">Add Failed</string>
+    <string name="editSuccess">Update Successful</string>
+    <string name="editFailed">Update Failed</string>
 </resources>

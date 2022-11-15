@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
             android:layout_marginTop="10dp"
-            android:text=""
+            android:text="@string/errror"
             android:textAlignment="center"
             android:textColor="@color/red"
             android:textSize="20dp"

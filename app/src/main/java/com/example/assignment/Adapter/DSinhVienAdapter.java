@@ -4,6 +4,8 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
@@ -30,6 +32,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Locale;
 
 public class DSinhVienAdapter extends BaseAdapter {
     private ArrayList<SinhVien> listSinhVien;
@@ -160,7 +163,7 @@ public class DSinhVienAdapter extends BaseAdapter {
         });
         btn_editSV.setOnClickListener(view -> {
             if (ed_suaMaSV.getText().toString().isEmpty() || ed_suaHoVaTen.getText().toString().isEmpty() || ed_suaNgaySinh.getText().toString().isEmpty()) {
-                tvError.setText("Vui lòng không để trống");
+                tvError.setText(R.string.errror);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
@@ -177,10 +180,10 @@ public class DSinhVienAdapter extends BaseAdapter {
                     e.printStackTrace();
                 }
                 if (daoSinhVien.updateSinhVien(sv,maLoai)) {
-                    Toast.makeText(context, "Sửa thành công", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.editSuccess, Toast.LENGTH_LONG).show();
                     dialog.dismiss();
                 } else {
-                    Toast.makeText(context, "Sửa thất bại", Toast.LENGTH_LONG).show();
+                    Toast.makeText(context, R.string.addFailed, Toast.LENGTH_LONG).show();
                 }
                 loadDanhSach();
             }
@@ -202,4 +205,6 @@ public class DSinhVienAdapter extends BaseAdapter {
         TextView tv_tenSinhVien, tv_ngaySinh;
         ImageView imgDel, imgEdit;
     }
+
+
 }
