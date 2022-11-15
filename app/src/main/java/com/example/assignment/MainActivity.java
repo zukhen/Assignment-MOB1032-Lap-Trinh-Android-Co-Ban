@@ -233,8 +233,8 @@ public class MainActivity extends AppCompatActivity {
     }
     private void showChangeLanguageDialog() {
 //        mang chua ngon ngu hien thi
-//        tiếng việt, tiếng anh, tiếng hindi, tiếng ả rập, tiêng Pháp
-        final String[] listItems = {"Tiếng Việt", "English", "हिन्दी", "عربي", "Français"};
+//        tiếng việt, tiếng anh, tiếng hindi, tiêng Pháp
+        final String[] listItems = {"Tiếng Việt", "English", "हिन्दी",  "Français"};
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle(R.string.language);
         builder.setSingleChoiceItems(listItems, -1, (dialogInterface, i) -> {
@@ -252,10 +252,6 @@ public class MainActivity extends AppCompatActivity {
                     recreate();
                     break;
                 case 3:
-                    changeLanguage("ar");
-                    recreate();
-                    break;
-                case 4:
                     changeLanguage("fr");
                     recreate();
                     break;
