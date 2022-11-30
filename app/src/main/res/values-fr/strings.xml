@@ -24,4 +24,5 @@
     <string name="addFailed">Échec de l\'ajout</string>
     <string name="editSuccess">Modification réussie</string>
     <string name="editFailed">Corrigez l\'erreur</string>
+
 </resources>

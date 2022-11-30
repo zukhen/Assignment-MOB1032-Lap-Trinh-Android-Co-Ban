@@ -41,6 +41,7 @@ public class DanhSachLop extends AppCompatActivity {
         btn_backToMain.setOnClickListener(view -> {
             intent = new Intent(DanhSachLop.this, MainActivity.class);
             startActivity(intent);
+            finish();
         });
 
         listLop.clear();

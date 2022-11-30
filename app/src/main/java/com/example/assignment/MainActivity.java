@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private LopDAO daoLop;
     private SinhVienDAO daoSinhVien;
     private ImageView btn_Setting;
+
     @SuppressLint("SimpleDateFormat")
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy");
     private Intent intent;
@@ -72,17 +73,19 @@ public class MainActivity extends AppCompatActivity {
         btn_xemDSLop.setOnClickListener(view -> {
             intent = new Intent(context, DanhSachLop.class);
             startActivity(intent);
+            finish();
         });
         btn_xemDSSinhVien.setOnClickListener(view -> {
             intent = new Intent(context, DanhSachSinhVien.class);
             startActivity(intent);
+            finish();
         });
         btn_Setting.setOnClickListener(view -> {
             showChangeLanguageDialog();
         });
+
+
     }
-
-
 
 
     //    sử dụng hàm dialog thêm Lớp;
@@ -212,6 +215,7 @@ public class MainActivity extends AppCompatActivity {
 //        show
         dialog.show();
     }
+
     // thay doi ngon ngu
     private void changeLanguage(String language) {
         Locale locale = new Locale(language);
@@ -231,10 +235,11 @@ public class MainActivity extends AppCompatActivity {
         String language = prefs.getString("my_Lang", "");
         changeLanguage(language);
     }
+
     private void showChangeLanguageDialog() {
 //        mang chua ngon ngu hien thi
 //        tiếng việt, tiếng anh, tiếng hindi, tiêng Pháp
-        final String[] listItems = {"Tiếng Việt", "English", "हिन्दी",  "Français"};
+        final String[] listItems = {"Tiếng Việt", "English", "हिन्दी", "Français"};
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setTitle(R.string.language);
         builder.setSingleChoiceItems(listItems, -1, (dialogInterface, i) -> {

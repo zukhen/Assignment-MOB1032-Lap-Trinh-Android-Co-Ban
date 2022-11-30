@@ -11,19 +11,21 @@
         android:layout_height="wrap_content"
         android:background="@drawable/background_item_lop"
         android:orientation="horizontal"
+        android:layout_weight="5"
         android:paddingVertical="2dp">
 
         <ImageView
             android:id="@+id/avatarItemLS"
-            android:layout_width="77dp"
+            android:layout_width="0dp"
             android:layout_height="80dp"
             android:padding="8dp"
+            android:layout_weight="1"
             android:src="@drawable/ic_launcher_foreground" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="4"
+            android:layout_weight="3"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -51,21 +53,27 @@
 
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/imgEdit"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+       <LinearLayout
+           android:layout_width="0dp"
+           android:orientation="horizontal"
+           android:layout_weight="1"
+           android:layout_height="match_parent">
+           <ImageView
+               android:id="@+id/imgEdit"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
 
-            android:layout_gravity="center"
-            android:src="@drawable/ic_baseline_mode_edit_24" />
+               android:layout_gravity="center"
+               android:src="@drawable/ic_baseline_mode_edit_24" />
 
-        <ImageView
-            android:id="@+id/imgDel"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
+           <ImageView
+               android:id="@+id/imgDel"
+               android:layout_width="40dp"
+               android:layout_height="40dp"
+               android:layout_gravity="center"
 
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_baseline_delete_outline_24" />
+               android:layout_marginLeft="5dp"
+               android:src="@drawable/ic_baseline_delete_outline_24" />
+       </LinearLayout>
     </LinearLayout>
 </LinearLayout>

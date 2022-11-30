@@ -24,4 +24,5 @@
     <string name="addFailed">Add Failed</string>
     <string name="editSuccess">Update Successful</string>
     <string name="editFailed">Update Failed</string>
+
 </resources>

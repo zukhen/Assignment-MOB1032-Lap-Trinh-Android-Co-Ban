@@ -24,4 +24,5 @@
     <string name="addFailed">जोड़ना विफल रहा</string>
     <string name="editSuccess">अद्यतन सफल</string>
     <string name="editFailed">अपडेट विफल हुआ</string>
+
 </resources>

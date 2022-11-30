@@ -26,7 +26,6 @@ public class DanhSachSinhVien extends AppCompatActivity{
     private Intent intent;
     private DSinhVienAdapter adapter;
     private Context context;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,6 +42,7 @@ public class DanhSachSinhVien extends AppCompatActivity{
         btn_backToMain.setOnClickListener(view -> {
             intent = new Intent(DanhSachSinhVien.this, MainActivity.class);
             startActivity(intent);
+            finish();
         });
 
         listSinhVien.clear();
